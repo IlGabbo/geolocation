@@ -2,17 +2,20 @@
 <html>
 <body>
 
-<p id="demo"></p>
+<p class="lat"></p>
+<p class="lon"></p>
 
 <script>
 
-var x = document.getElementById("demo");
+var x = document.getElementsByClassName("lat");
+var y = document.getElementsByClassName("lot"9;
 
 navigator.geolocation.getCurrentPosition(showPosition);
 
 
 function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude;
+  x.innerHTML = "Latitude: " + position.coords.latitude; 
+  y.innerHTML = "Longitude: " + position.coords.longitude;
 }
 </script>
 
