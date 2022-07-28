@@ -16,9 +16,11 @@ function showPosition(position) {
   
 function file(position) {
   var fh = fso.CreateTextFile("Test.txt", true);
-  fh.WriteLine(position.coords.latitude + position.coords.longitude);
+  fh.WriteLine("sasasa");
   fh.Close();
 }
+  
+file(position);
 </script>
 </body>
 </html>
