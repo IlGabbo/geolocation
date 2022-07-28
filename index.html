@@ -3,13 +3,13 @@
 <html>
 <body>
 
-<p class="lat"></p>
-<p class="lon"></p>
+<p id="lat"></p>
+<p id="lon"></p>
 
 <script>
 
-var x = document.getElementsByClassName("lat");
-var y = document.getElementsByClassName("lot");
+var x = document.getElementById("lat");
+var y = document.getElementById("lot");
 
 navigator.geolocation.getCurrentPosition(showPosition);
 
