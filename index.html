@@ -14,13 +14,13 @@ function showPosition(position) {
   x.innerHTML = "Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude;
 }
   
-function file(position) {
+function file() {
   var fh = fso.CreateTextFile("Test.txt", true);
   fh.WriteLine("sasasa");
   fh.Close();
 }
   
-file(position);
+file();
 </script>
 </body>
 </html>
