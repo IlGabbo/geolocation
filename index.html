@@ -1,6 +1,12 @@
 
 <!DOCTYPE html>
 <head>
+
+</head>
+<html>
+<body>
+
+<p id="coordinates"></p>
 <script>
     var x = document.getElementById("coordinates");
     navigator.geolocation.getCurrentPosition(showPosition);
@@ -9,10 +15,5 @@
       x.innerHTML = "Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude;
     }
 </script>
-</head>
-<html>
-<body>
-
-<p id="coordinates"></p>
 </body>
 </html>
