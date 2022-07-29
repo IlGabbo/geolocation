@@ -1,18 +1,18 @@
 
 <!DOCTYPE html>
 <head>
+<script>
+    var x = document.getElementById("coordinates");
+    navigator.geolocation.getCurrentPosition(showPosition);
+
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude;
+    }
+</script>
 </head>
 <html>
 <body>
 
-<p id="coordinates">sasasasasasa</p>
-<script>
-var x = document.getElementById("coordinates");
-navigator.geolocation.getCurrentPosition(showPosition);
-
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude;
-}
-</script>
+<p id="coordinates"></p>
 </body>
 </html>
