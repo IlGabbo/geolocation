@@ -1,5 +1,4 @@
 
-var x = document.getElementById("coordinates");
 navigator.geolocation.getCurrentPosition(showPosition);
 
 function showPosition(position) {
